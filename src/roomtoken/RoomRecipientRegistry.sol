@@ -4,8 +4,8 @@ pragma solidity ^0.8.30;
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 import {Ownable2Step} from "@openzeppelin/contracts/access/Ownable2Step.sol";
 
-/// Resolves the custodial fee legs (room fund, platform) per room. Owned by
-/// the platform Safe. The creator leg deliberately does NOT resolve here —
+/// Resolves the custodial fee legs (room fund, platform) per room. The
+/// creator leg deliberately does NOT resolve here —
 /// it lives in each splitter, redirectable by the creator alone.
 /// Ownable2Step: a mistaken transferOwnership() cannot brick the registry —
 /// the incoming owner must call acceptOwnership() before control moves.

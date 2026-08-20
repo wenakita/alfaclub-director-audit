@@ -4,7 +4,6 @@ pragma solidity ^0.8.30;
 import {UERC20Metadata} from "./UERC20Metadata.sol";
 
 /// Official Uniswap `UERC20Factory` surface used by AlfaClubDirector.
-/// Live Robinhood: `0x000000e200088D55C39a11F609E5F667729ad49b`.
 interface IOfficialUERC20Factory {
     event TokenCreated(address tokenAddress, UERC20Metadata metadata);
 
